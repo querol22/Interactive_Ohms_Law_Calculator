@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1708.5"
+   height="1416.6823"
+   viewBox="0 0 1708.5 1416.6823"
+   version="1.1"
+   id="svg8"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title56">Electric Components Library</title>
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Electric Components Library</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Filip Dominec and contributors</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Filip Dominec and contributors</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:description>A library of SVG symbols to be used in electric and electronic circuit diagrams in Wikimedia Projects.</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Filip Dominec (https://commons.wikimedia.org/wiki/User:FDominec)
+Omegatron (https://commons.wikimedia.org/wiki/User:Omegatron)
+WvBraun (https://commons.wikimedia.org/wiki/User:WvBraun)
+Zedh (https://commons.wikimedia.org/wiki/User:Zedh)
+Rainglasz (see: Wikimedia Commons)
+Guruleninn (see: Wikimedia Commons)
+WarX (https://commons.wikimedia.org/wiki/User:WarX)
+Spuzzdawg~commonswiki (see: Wikimedia Commons)
+Sunspeanzler (https://commons.wikimedia.org/wiki/User:Sunspeanzler)
+Tlapicka (see: Wikimedia Commons)
+Xorx (https://commons.wikimedia.org/wiki/User:Xorx)
+Pemu (https://commons.wikimedia.org/wiki/User:Pemu)
+mpan (&lt;https://commons.wikimedia.org/wiki/User:Wikimpan&gt;; &lt;https://mpan.pl/&gt;)
+</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="translate(-6.5,388.58334)">
+    <path
+       id="path3970"
+       style="fill:none;stroke:#000000;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 182,710.41665 h -10.5 l -3.5,-7 -7,14 -7,-14 -7,14 -7,-14 -7,14 -3.5,-7 H 119" />
+  </g>
+</svg>

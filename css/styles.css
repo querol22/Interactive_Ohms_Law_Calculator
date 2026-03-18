@@ -1,0 +1,42 @@
+body {
+  font-family: system-ui, Arial, sans-serif;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.5;
+}
+
+header { text-align: center; margin-bottom: 2rem; }
+h1, h2 { color: #1a3c6d; }
+
+section { margin-bottom: 2.5rem; padding: 1.2rem; border: 1px solid #ddd; border-radius: 8px; }
+
+#circuit {
+  min-height: 200px;
+  background: #f9f9f9;
+  border: 1px dashed #aaa;
+  padding: 1rem;
+  text-align: center;
+}
+
+label { display: inline-block; margin: 0.6rem 1.2rem 0.6rem 0; }
+input[type="number"] {
+  width: 90px;
+  padding: 0.4rem;
+  font-size: 1.05rem;
+}
+
+button {
+  padding: 0.7rem 1.4rem;
+  font-size: 1.1rem;
+  background: #438df4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover { background: #2c5aa3; }
+
+.result-line { margin: 0.5rem 0; font-size: 1.1rem; }
+.warning { color: #fa1900; font-weight: bold; }

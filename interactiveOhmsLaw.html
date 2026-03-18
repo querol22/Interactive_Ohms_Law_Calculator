@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ohm's Law Calculator – EE/BME Edition</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+    <h1>Ohm's Law & Power Calculator</h1>
+    <p>Enter any two values — the rest will calculate automatically. Small DC resistive circuit solver (1–2 loops) using KCL & KVL</p>
+    </header>  
+
+    <main> 
+        <!-- We'll build the input form here in next steps -->
+        <section id="inputs">
+            <h2>Circuit Definition</h2>
+            <!-- Form fields will go here -->
+            <div class="inputs">
+            <label>Voltage (V): <input type="number" id="voltage" step="any" min="0"></label>
+            <label>Current (A): <input type="number" id="current" step="any" min="0"></label>
+            <label>Resistance (Ω): <input type="number" id="resistance" step="any" min="0"></label>
+            </div>
+        </section>
+
+        <section id="results">
+          <h2>Results</h2>
+          <div id="solution"></div>
+        </section>
+
+        <section id="circuit-view">
+            <h2>Circuit Visualization</h2>
+            <div id="circuit"></div>
+        </section>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
