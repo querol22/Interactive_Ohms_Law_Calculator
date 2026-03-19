@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const solutionEl  = document.getElementById('solution');
     const circuitEl   = document.getElementById('circuit');
 
+    let activeInput = null;
+
+    [voltageEl, currentEl, resistanceEl].forEach(el => {
+        el.addEventListener('focus', () => activeInput = el.id);
+    });
+
     function updateAll() {  
         const v = voltageEl.value;
         const i = currentEl.value;
@@ -20,10 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const result = calculateOhmsLaw(v, i, r);
 
-        if (result.voltage    !== null) voltageEl.value    = result.voltage.toFixed(3);
-        if (result.current    !== null) currentEl.value    = result.current.toExponential(4);
-        if (result.resistance !== null) resistanceEl.value = result.resistance.toFixed(3);
+        console.log("RESULT:", result);
 
+        // Avoid overwriting active input
+        if (result.voltage !== null && activeInput !== 'voltage') {
+            voltageEl.value = result.voltage.toFixed(3);
+        }
+        if (result.current !== null && activeInput !== 'current') {
+            currentEl.value = result.current.toExponential(4);
+        }
+        if (result.resistance !== null && activeInput !== 'resistance') {
+            resistanceEl.value = result.resistance.toFixed(3);
+        }  
+
+        // Results display
         let html = '';
         if (result.filled >= 2) {
             html = `
@@ -32,8 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="result-line"><strong>Resistance:</strong> ${result.resistance?.toFixed(3) ?? '?'} Ω</div>
                 <div class="result-line"><strong>Power:</strong> ${result.power != null ? result.power.toFixed(4) : '?'} W</div>
             `;
-            if (result.warning) {
-                html += `<div class="warning">${result.warning}</div>`;
+            
+            if (result.warning.length > 0) {
+             html += result.warning.map(w => `<div class="warning">${w}</div>`).join('');
             }
         } else {
             html = '<div style="color:#777;">Enter two values to calculate</div>';
